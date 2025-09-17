@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Offside Cafe </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #fdfdfd;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      position: relative;
+    }
+
+    .header-content {
+      background-color: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .header-content img {
+      max-width: 180px;
+height:200px;
+      border-radius: 10%;
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+
+    .header-content h1 {
+      margin: 10px 0 5px 0;
+      font-size: 32px;
+    }
+
+    .header-content p {
+      font-size: 16px;
+    }
+
+    .quote {
+      color: #ff8800;
+      font-size: 20px;
+      margin-top: 15px;
+      font-weight: bold;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    nav {
+      background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+      text-align: center;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .menu img {
+      max-width: 90%;
+      margin: 20px auto;
+      display: block;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .quote-after-gallery {
+      color: #e67e22;
+      font-size: 20px;
+      margin: 20px auto;
+      font-weight: bold;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      color: white;
+      background-color: #c0392b;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .buttons-description {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .booking {
+      background-color: #f8f8f8;
+      padding: 40px 20px;
+    }
+
+    .booking h2 {
+      font-size: 28px;
+      color: #d35400;
+      font-weight: bold;
+    }
+
+    .booking p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      font-style: italic;
+      color: #444;
+    }
+
+    .booking ul {
+      list-style: none;
+      padding: 0;
+      font-size: 17px;
+      color: #2c3e50;
+      line-height: 1.8em;
+    }
+
+    .booking ul li {
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .contact a {
+      display: block;
+      margin: 10px auto;
+      padding: 12px;
+      width: 80%;
+      background-color: #2c3e50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .social-icons {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .social-icons a img {
+      width: 40px;
+      margin: 0 10px;
+      vertical-align: middle;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .social-icons a:hover img {
+      transform: scale(1.2);
+      opacity: 0.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        margin: 4px 6px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="logo.jpg" alt="Cafe Logo">
+      <h1>OffSide Cafe</h1>
+      <p>Rail Gate Rd,Canning West Bengal</p>
+      <div class="quote">"One step OffSide,forever on the flavor side."</div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#buttons">Offers</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="menu" id="menu">
+    <h2>Our Delicious Food Menu</h2>
+    <img src="pujabanner.png" alt="Menu Page 1">
+<img src="menufront.jpg" alt="Menu Page 1">
+<img src="tea.png" alt="Menu Page 1">
+ <img src="drink.png" alt="Menu Page 1">
+ <img src="waffle.png" alt="Menu Page 1">
+ <img src="icecream.png" alt="Menu Page 1">
+ <img src="milkshake.png" alt="Menu Page 1">
+ <img src="fries.png" alt="Menu Page 1">
+ <img src="momo.png" alt="Menu Page 1">
+ <img src="pizza.png" alt="Menu Page 1">
+ <img src="sandwitch.png" alt="Menu Page 1">
+    <img src="pasta.jpg" alt="Menu Page 1">
+ <img src="wraproll.png" alt="Menu Page 1">
+ <img src="combo.png" alt="Menu Page 1">
+
+  <!-- গ্রাহকদের জন্য বিশেষ বার্তা -->
+<div style="margin:40px auto; max-width:600px; background:linear-gradient(135deg,#fff3e0,#ffe0b2);
+            padding:25px; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.25);
+            text-align:center; font-family:'Noto Serif Bengali', serif; animation:fadeIn 2s ease-in-out;">
+
+  <h3 style="color:#d35400; font-size:24px; margin-bottom:15px;">🙏 প্রিয় গ্রাহক</h3>
+  
+  <p style="font-size:18px; color:#2c3e50; line-height:1.8; font-weight:500;">
+    আমাদের <b style="color:#e74c3c;">গুগল রিভিউ ফর্মে</b> আপনার মতামত লিখে জানালে  
+    আমরা কৃতজ্ঞ থাকব।  
+    <br><br>
+    এছাড়াও, দ্রুত আপডেট পেতে আমাদের  
+    <b style="color:#8e44ad;">Instagram</b> ও <b style="color:#2980b9;">Facebook</b>-এ যুক্ত থাকুন।  
+    <br><br>
+    <span style="font-size:16px; color:#555;">(লিঙ্ক নিচে দেওয়া আছে)</span>
+  </p>
+</div>
+
+  </section>
+
+  <section class="buttons" id="buttons">
+    <h2>Stay Updated</h2>
+    <p class="buttons-description">Follow our Facebook page to get informed about offers and new food items, and order your favorites online on Zomato.</p>
+    <a href="https://www.facebook.com/people/Offside_cafe/100089055008074/#="_blank">Follow Us On Facebook</a>
+<a href="https://www.instagram.com/offside_cafe?igsh=YmV3YzBqdGkzYnlp="_blank">Follow Us On Instagram</a>
+    <a href="https://www.zomato.com/canning/offside-cafe-canning-locality/order="_blank">Order on Zomato</a>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <img src="img1.jpg" alt="Food 1">
+    <img src="background.jpg" alt="Food 2">
+    <img src="img3.jpeg" alt="Food 3">
+    <img src="img4.jpg" alt="Food 4">
+  </section>
+
+<center><b>
+  <div class="quote-after-gallery">"One step OffSide,forever on the flavor side"</div>
+</b> </center>
+
+  
+
+<section class="booking" id="booking">
+  <h2>Your Event, Our OffSide Charm</h2>
+  <p>From intimate dates to grand celebration our cafe offers the perfect backdrop.</p>
+  <ul>
+    <li>🎉 <strong>Special Occasions:</strong> Birthdays, Anniversaries & More</li>
+    <li>💖 <strong>Romantic Getaways:</strong> Perfect for Dating & Private Dinners</li>
+    <li>👥 <strong>Group Gatherings:</strong> Ideal for Parties & Events</li>
+    <li>🏠 <strong>Full Venue Hire:</strong> Exclusive One-Day Bookings Available</li>
+  </ul>
+
+  <!-- WhatsApp Booking Form -->
+  <form id="whatsappForm" style="max-width:400px;margin:20px auto;text-align:left;">
+    <label>Name:</label>
+    <input type="text" id="name" required style="width:100%;padding:10px;margin:5px 0;border:1px solid #ccc;border-radius:8px;">
+
+    <label>Date:</label>
+    <input type="date" id="date" required style="width:100%;padding:10px;margin:5px 0;border:1px solid #ccc;border-radius:8px;">
+
+    <label>Time:</label>
+    <input type="time" id="time" required style="width:100%;padding:10px;margin:5px 0;border:1px solid #ccc;border-radius:8px;">
+
+    <label>No of Person:</label>
+    <input type="number" id="persons" min="1" required style="width:100%;padding:10px;margin:5px 0;border:1px solid #ccc;border-radius:8px;">
+    <button type="submit" style="background:linear-gradient(to right,#25D366,#128C7E); color:white; padding:12px 20px; border:none; border-radius:8px; font-size:16px; cursor:pointer; width:100%;margin-top:10px;">
+      📩 Book Now on WhatsApp
+    </button>
+  </form>
+</section>
+
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <a href="tel:+919883357503">📞 Call Us</a>
+    <a href="https://share.google/EWudc1yJjshNnYnNe">⭐Your Review Means a Lot⭐</a>
+    <a href="https://www.bing.com/maps?q=offside+cafe+canning&FORM=HDRSC6&cp=22.321177%7E88.654797&lvl=16.0="_blank">📍 Find Us on Google Maps</a>
+  </section>
+
+  <div class="social-icons">
+    <a href="https://wa.me/919883357503" target="_blank"><img src="whatsapp.png" alt="WhatsApp"></a>
+    <a href="https://www.facebook.com/people/Offside_cafe/100089055008074/#="_blank"><img src="facebook.png" alt="Facebook"></a>
+    <a href="https://www.instagram.com/offside_cafe?igsh=YmV3YzBqdGkzYnlp="_blank"><img src="instragram.png" alt="Instagram"></a>
+    <a href="https://www.zomato.com/canning/offside-cafe-canning-locality/order="_blank"><img src="zomato.png" alt="Zomato"></a>
+  </div>
+
+  <footer>
+    <p>© 2025 OffSide Cafe. All Rights Reserved.</p>
+<p>Design by Sudipan Mukherjee.</p>
+
+
+  </footer>
+
+</body>
+
+<script>
+  document.getElementById("whatsappForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    // ফর্ম থেকে ভ্যালু নেওয়া
+    let name = document.getElementById("name").value;
+    let date = document.getElementById("date").value;
+    let time = document.getElementById("time").value;
+    let persons = document.getElementById("persons").value;
+
+    // তোমার WhatsApp নাম্বার (দেশ কোডসহ, কিন্তু "+" ছাড়া)
+    let phoneNumber = "919883357503";
+
+    // WhatsApp মেসেজ তৈরি
+    let message = `Hello, I would like to book a table at OffSide Cafe.%0A%0A` +
+                  `Name: ${name}%0A` +
+                  `Date: ${date}%0A` +
+                  `Time: ${time}%0A` +
+                  `Persons: ${persons}`;
+
+    // WhatsApp এ পাঠানো
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+  });
+</script>
+
+</html>
